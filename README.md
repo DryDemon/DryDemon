@@ -31,32 +31,20 @@
 
 <p align="center">
 
-- ## <img src="responsive-symbol-with-a-widescreen-monitor-a-cellphone-and-a-tablet-svgrepo-com.svg" width ="25"><b> Web Apps/Mobile Apps</b>
+- ### <img src="responsive-symbol-with-a-widescreen-monitor-a-cellphone-and-a-tablet-svgrepo-com.svg" width ="25"><b> &nbsp;&nbsp;Web Apps/Mobile Apps</b>
     
-<br>   
+- ### <img src="review-screen-svgrepo-com.svg" width ="25"><b> &nbsp;&nbsp;Code Review</b>
+
+- ### <img src="ethernet-svgrepo-com.svg" width ="25"><b> &nbsp;&nbsp;Physical</b>
     
-- ## <img src="review-screen-svgrepo-com.svg" width ="25"><b> Code Review</b>
-
-<br>
-
-- ## <img src="ethernet-svgrepo-com.svg" width ="25"><b> Physical</b>
+- ### <img src="building-dome-svgrepo-com.svg" width ="25"><b> &nbsp;&nbsp;Physical</b>
     
-<br>
-
-- ## <img src="building-dome-svgrepo-com.svg" width ="25"><b> Physical</b>
+- ### <img src="hardware-detect-svgrepo-com.svg" width ="25"><b> &nbsp;&nbsp;Hardware/IOT</b>
     
-<br>
 
-
-- ## <img src="hardware-detect-svgrepo-com.svg" width ="25"><b> Hardware/IOT</b>
+- ### <img src="wifi-svgrepo-com.svg" width ="25"><b> &nbsp;&nbsp;Wifi</b>
     
-<br>
-
-- ## <img src="wifi-svgrepo-com.svg" width ="25"><b> Wifi</b>
-    
-<br>
-
-- ## <img src="radio-handheld-svgrepo-com.svg" width ="25"><b> RF Radio</b>
+- ### <img src="radio-handheld-svgrepo-com.svg" width ="25"><b> &nbsp;&nbsp;RF Radio</b>
 </p>
 
 <br>
