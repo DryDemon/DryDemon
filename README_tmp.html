@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/*
+
+Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: white;
+  color: black;
+}
+
+.hljs-string,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-section,
+.hljs-addition,
+.hljs-attribute,
+.hljs-link {
+  color: #888;
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-meta,
+.hljs-deletion {
+  color: #ccc;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-section,
+.hljs-name,
+.hljs-type,
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 align="center"><b>Hi , I&apos;m Jean </b><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
+<p align="center">
+  <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="file:///c:/Users/jean/Git/DryDemon/animation.svg"></a>
+</p>
+<br>
+<h2 id="pictureimg-src--%22aboutmegif%22-width--50pxpicture-about-me"><picture><img src = "./about_me.gif" width = 50px></picture> <strong>About me</strong></h2>
+<p><picture> <img align="right" src="./Right_Side.gif" width = 250px></picture></p>
+<br>
+<ul>
+<li>A passionate Self-taught Pentester &amp; Hunter</li>
+<li>Playing CTF's at spare time</li>
+<li>Personal website <a href="https://jeanchartierkastler.com">link</a></li>
+<li>I’m currently open for short pentesting missions <a href="mailto:contact@jeanchartierkastler.com">link</a></li>
+</ul>
+<br>
+<p><img src="./bar.gif"><br><br></p>
+<h2 id="img-src%22httpsmedia2giphycommediaqssgempkyeohbcb7e1giphygifcidecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700blridgiphygif%22-width-%2225%22b-skillsb"><img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width ="25"><b> Skills</b></h2>
+<br>
+<p align="center">
+</p><ul>
+<li>
+<h3 id="img-src%22responsive-symbol-with-a-widescreen-monitor-a-cellphone-and-a-tablet-svgrepo-comsvg%22-width-%2225%22b-web-appsmobile-appsb"><img src="responsive-symbol-with-a-widescreen-monitor-a-cellphone-and-a-tablet-svgrepo-com.svg" width ="25"><b>   Web Apps/Mobile Apps</b></h3>
+</li>
+<li>
+<h3 id="img-src%22review-screen-svgrepo-comsvg%22-width-%2225%22b-code-reviewb"><img src="review-screen-svgrepo-com.svg" width ="25"><b>   Code Review</b></h3>
+</li>
+<li>
+<h3 id="img-src%22ethernet-svgrepo-comsvg%22-width-%2225%22b-physicalb"><img src="ethernet-svgrepo-com.svg" width ="25"><b>   Physical</b></h3>
+</li>
+<li>
+<h3 id="img-src%22building-dome-svgrepo-comsvg%22-width-%2225%22b-physicalb"><img src="building-dome-svgrepo-com.svg" width ="25"><b>   Physical</b></h3>
+</li>
+<li>
+<h3 id="img-src%22hardware-detect-svgrepo-comsvg%22-width-%2225%22b-hardwareiotb"><img src="hardware-detect-svgrepo-com.svg" width ="25"><b>   Hardware/IOT</b></h3>
+</li>
+<li>
+<h3 id="img-src%22wifi-svgrepo-comsvg%22-width-%2225%22b-wifib"><img src="wifi-svgrepo-com.svg" width ="25"><b>   Wifi</b></h3>
+</li>
+<li>
+<h3 id="img-src%22radio-handheld-svgrepo-comsvg%22-width-%2225%22b-rf-radiob"><img src="radio-handheld-svgrepo-com.svg" width ="25"><b>   RF Radio</b></h3>
+</li>
+</ul>
+<p></p>
+<br>
+<hr>
+<br>
+<h2 id="img-src%22httpsmediagiphycommediaiy8crbdqxodjscerirgiphygif%22-width%2235%22b-github-stats-b"><img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35"><b> Github Stats </b></h2>
+<br>
+<div align="center">
+</div><a href="https://github.com/DryDemon/">
+  <img src="https://github-readme-stats.vercel.app/api?username=DryDemon&amp;include_all_commits=true&amp;count_private=true&amp;show_icons=true&amp;line_height=20&amp;title_color=7A7ADB&amp;icon_color=2234AE&amp;text_color=D3D3D3&amp;bg_color=0,000000,130F40" width="450">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=DryDemon&amp;show_icons=true&amp;locale=en&amp;layout=compact&amp;line_height=20&amp;title_color=7A7ADB&amp;icon_color=2234AE&amp;text_color=D3D3D3&amp;bg_color=0,000000,130F40" width="375" alt="DryDemon">
+</a>
+
+<br>
+<br>
+<h2 id="b-lets-connectbimg-src%22handshakegif%22-width-%2280%22"><b> Let's Connect..!</b><img src="./handshake.gif" width ="80"></h2>
+<div align="left">
+</div><ul>
+</ul><li>
+<a href="https://www.linkedin.com/in/jean-ck/" target="_blank">
+<img src="https://img.shields.io/badge/linkedin:  Jean Chartier-%2300acee.svg?color=405DE6&amp;style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="linkedin" style="margin-bottom: 5px;">
+</a>
+</li>
+<br>
+<li>
+<a href="mailto:contact@jeanchartierkastler.com" target="_blank">
+<img src="https://img.shields.io/badge/gmail:  Jean Chartier-%23EA4335.svg?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" t="mail" style="margin-bottom: 5px;">
+</a>
+</li>
+
+
+<br>
+<img src="file:///c:/Users/jean/Git/DryDemon/bar.gif">
+<br>
+<br>
+<br>
+<div align="center">
+</div>
+</body>
+</html>

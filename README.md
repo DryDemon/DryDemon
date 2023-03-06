@@ -22,7 +22,7 @@
 - Personal website [link](https://jeanchartierkastler.com)
 - I’m currently open for short pentesting missions [link](mailto:contact@jeanchartierkastler.com)
 
-<br><br>
+<br>
 
 <img src="./bar.gif"><br><br>
 
@@ -67,9 +67,6 @@
 </div>
 
 <br>
-<br>
-
------
 
 <br>
 
