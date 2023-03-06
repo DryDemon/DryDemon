@@ -20,7 +20,7 @@
 - A passionate Self-taught Pentester & Hunter
 - Playing CTF's at spare time
 - Personal website [link](https://jeanchartierkastler.com)
-- I’m currently open for short pentesting missions [link](mailto:contact@jeanchartierkastler.com)
+- I’m currently open for short pentesting missions [email](mailto:contact@jeanchartierkastler.com)
 
 <br>
 
@@ -47,9 +47,6 @@
 - ### <img src="radio-handheld-svgrepo-com.svg" width ="25"><b> &nbsp;&nbsp;RF Radio</b>
 </p>
 
-<br>
-
------
 
 <br>
 
