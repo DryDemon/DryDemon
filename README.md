@@ -4,12 +4,6 @@
 <p align="center">
   <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="./animation.svg"></a>
 </p>
-
-
-<br>
-
-
-
 	
 ## <picture><img src = "./about_me.gif" width = 50px></picture> **About me**
 
