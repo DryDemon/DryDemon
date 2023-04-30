@@ -28,8 +28,6 @@
 - ### <img src="responsive-symbol-with-a-widescreen-monitor-a-cellphone-and-a-tablet-svgrepo-com.svg" width ="25"><b> &nbsp;&nbsp;Web Apps/Mobile Apps</b>
     
 - ### <img src="review-screen-svgrepo-com.svg" width ="25"><b> &nbsp;&nbsp;Code Review</b>
-
-- ### <img src="ethernet-svgrepo-com.svg" width ="25"><b> &nbsp;&nbsp;Physical</b>
     
 - ### <img src="building-dome-svgrepo-com.svg" width ="25"><b> &nbsp;&nbsp;Physical</b>
     
