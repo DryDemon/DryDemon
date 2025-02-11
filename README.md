@@ -13,8 +13,7 @@
 
 - A passionate Self-taught Pentester & Hunter
 - Playing CTF's at spare time
-- Personal website [link](https://jeanchartierkastler.com)
-- I’m currently open for short pentesting missions [email](mailto:contact@jeanchartierkastler.com)
+- I’m currently open for short pentesting missions : jean.chartierkastler[[@]]gmail
 
 <br>
 
